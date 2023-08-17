@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+
+  &--violet {
+    background-color: $violet-color;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: $violet-soft-color;
+      transition: background-color 0.2s;
+    }
+  }
+  &--purple {
+    background-color: $purple-color;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: $purple-soft-color;
+      transition: background-color 0.2s;
+    }
+  }
+  &--mint {
+    background-color: $mint-color;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: $mint-soft-color;
+      transition: background-color 0.2s;
+    }
+  }
+
+  &--content {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border: solid 1px $black-color;
+  }
+}
+
+.image {
+  width: 100%;
+  & img {
+    width: 100%;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s;
+    }
+  }
+}

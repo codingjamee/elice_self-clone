@@ -190,6 +190,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s;
 }
 .header__charac:hover {
   color: #917f7f;
@@ -204,4 +205,56 @@ body {
 .li a {
   display: block;
   height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+}
+.card--violet {
+  background-color: #524fa1;
+  transition: background-color 0.2s;
+}
+.card--violet:hover {
+  background-color: #8683bd;
+  transition: background-color 0.2s;
+}
+.card--purple {
+  background-color: #a44789;
+  transition: background-color 0.2s;
+}
+.card--purple:hover {
+  background-color: #8683bd;
+  transition: background-color 0.2s;
+}
+.card--mint {
+  background-color: #3ab6bc;
+  transition: background-color 0.2s;
+}
+.card--mint:hover {
+  background-color: #75ccd0;
+  transition: background-color 0.2s;
+}
+.card--content {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.image {
+  width: 100%;
+}
+.image img {
+  width: 100%;
+}
+.image img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }/*# sourceMappingURL=style.css.map */
