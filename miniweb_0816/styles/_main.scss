@@ -39,6 +39,12 @@
     text-align: center;
     border: solid 1px $black-color;
   }
+
+  &__text {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 
 .image {

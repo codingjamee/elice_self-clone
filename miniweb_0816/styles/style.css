@@ -230,7 +230,7 @@ body {
   transition: background-color 0.2s;
 }
 .card--purple:hover {
-  background-color: #8683bd;
+  background-color: #bf7eac;
   transition: background-color 0.2s;
 }
 .card--mint {
@@ -247,6 +247,11 @@ body {
   text-align: center;
   border: solid 1px #000;
 }
+.card__text {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
 
 .image {
   width: 100%;
@@ -257,4 +262,21 @@ body {
 .image img:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+.footer {
+  height: 80px;
+  font-size: 20px;
+  display: flex;
+}
+.footer__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.footer__wrapper p {
+  color: #999;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
