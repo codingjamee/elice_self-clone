@@ -191,6 +191,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.header__charac:hover {
+  color: #917f7f;
+  transition: color 0.3s;
+}
 
 .li {
   display: block;
