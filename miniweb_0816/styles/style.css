@@ -147,6 +147,11 @@ body {
   background-color: #fbfbfb;
 }
 
+@media (min-width: 335px) and (max-width: 1023px) {
+  .container {
+    width: 640px;
+  }
+}
 .header {
   width: 100%;
   height: 80px;
@@ -155,11 +160,13 @@ body {
 }
 .header__wrapper {
   width: 100%;
-  margin-left: 0 auto;
   display: flex;
   align-items: center;
 }
 .header__logo {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
   text-align: left;
   align-items: center;
   font-size: 30px;
@@ -207,6 +214,29 @@ body {
   height: 100%;
 }
 
+@media (min-width: 335px) and (max-width: 1023px) {
+  .header {
+    height: 160px;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    display: flex;
+  }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+  }
+  .header__logo h1 {
+    display: flex;
+    align-items: center;
+  }
+  .header__nav {
+    width: 100%;
+  }
+}
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +271,7 @@ body {
   background-color: #75ccd0;
   transition: background-color 0.2s;
 }
-.card--content {
+.card__content {
   width: 100%;
   padding: 20px 0;
   text-align: center;
@@ -251,6 +281,9 @@ body {
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
+}
+.card__welcome {
+  font-size: 20px;
 }
 
 .image {
@@ -264,6 +297,15 @@ body {
   transition: transform 0.3s;
 }
 
+@media (min-width: 335px) and (max-width: 1023px) {
+  .card {
+    width: 100%;
+    height: 420px;
+  }
+  .card__content {
+    height: initial;
+  }
+}
 .footer {
   height: 80px;
   font-size: 20px;

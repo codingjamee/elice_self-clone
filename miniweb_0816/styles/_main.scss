@@ -9,41 +9,44 @@
   width: 50%;
 
   &--violet {
-    background-color: $violet-color;
+    background-color: #{$violet-color};
     transition: background-color 0.2s;
     &:hover {
-      background-color: $violet-soft-color;
+      background-color: #{$violet-soft-color};
       transition: background-color 0.2s;
     }
   }
   &--purple {
-    background-color: $purple-color;
+    background-color: #{$purple-color};
     transition: background-color 0.2s;
     &:hover {
-      background-color: $purple-soft-color;
+      background-color: #{$purple-soft-color};
       transition: background-color 0.2s;
     }
   }
   &--mint {
-    background-color: $mint-color;
+    background-color: #{$mint-color};
     transition: background-color 0.2s;
     &:hover {
-      background-color: $mint-soft-color;
+      background-color: #{$mint-soft-color};
       transition: background-color 0.2s;
     }
   }
 
-  &--content {
+  &__content {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    border: solid 1px $black-color;
+    border: solid 1px #{$black-color};
   }
 
   &__text {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
+  }
+  &__welcome {
+    font-size: #{$small-font-size};
   }
 }
 
@@ -54,6 +57,16 @@
     &:hover {
       transform: scale(1.1);
       transition: transform 0.3s;
+    }
+  }
+}
+
+@include mobile {
+  .card {
+    width: 100%;
+    height: 420px;
+    &__content {
+      height: initial;
     }
   }
 }
