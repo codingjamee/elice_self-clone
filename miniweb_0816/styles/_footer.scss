@@ -14,3 +14,16 @@
     }
   }
 }
+
+@include mobile {
+  .footer {
+    padding: 30px 0;
+    &__wrapper {
+      flex-direction: column;
+      justify-content: space-around;
+      & p {
+        font-weight: 100;
+      }
+    }
+  }
+}
